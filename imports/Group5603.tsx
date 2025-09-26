@@ -1,4 +1,4 @@
-import imgImg796510 from "figma:asset/cdbea73faec43f3ec24e033d4aa203baada152b7.png";
+const imgImg796510 = "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1080&auto=format&fit=crop";
 
 export default function Group5603() {
   return (

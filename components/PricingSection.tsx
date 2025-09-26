@@ -1,5 +1,4 @@
 import { Button } from "./ui/button";
-import Group5603 from "../imports/Group5603";
 
 export function PricingSection() {
   return (
@@ -23,9 +22,14 @@ export function PricingSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Card - Join Designjoy */}
           <div className="relative bg-card rounded-3xl p-8 lg:p-10 shadow-lg border border-border/50 overflow-hidden">
-            {/* Floating Group5603 Element */}
-            <div className="absolute -top-8 -left-8 w-48 h-48 scale-50 opacity-90">
-              <Group5603 />
+            {/* Decorative handshake image (replaces Group5603) */}
+            <div className="absolute -bottom-24 -right-24 w-[28rem] h-[28rem] lg:w-[40rem] lg:h-[40rem] opacity-80 pointer-events-none select-none">
+              <img
+                src="/images/handsshakingisometric.png"
+                alt="Handshake illustration"
+                className="w-full h-full object-cover"
+                draggable={false}
+              />
             </div>
 
             {/* Card Content */}

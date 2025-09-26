@@ -143,9 +143,8 @@ export function ServiceTiersSection() {
         {/* Service Tier Cards - with top padding for badges */}
         <div className="pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            {serviceTiers.map((tier, index) => {
+            {serviceTiers.map((tier) => {
               const visibleFeatures = allExpanded ? tier.features : tier.features.slice(0, 4)
-              const hasMoreFeatures = tier.features.length > 4
               
               return (
                 <div key={tier.name} className="relative">
@@ -252,7 +251,7 @@ export function ServiceTiersSection() {
       </div>
 
       {/* Custom floating animation styles */}
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0%, 100% { 
             transform: translate(-50%, 0px); 

@@ -1,4 +1,4 @@
-"use client";
+// client component
 
 import {
   Accordion,
@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-import exampleImage from "figma:asset/0bf9af01f90c20ef20c397d904eaf2478024adbb.png";
+const exampleImage = "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1080&auto=format&fit=crop";
 
 const faqData = [
   {
@@ -69,7 +69,7 @@ const faqData = [
     question: "“How easy are you guys to reach?”",
     answer: "OUR PAUL WILL SPEAK TO YOUR PAULS",
   },
-];
+] as const;
 
 export function FAQSection() {
   return (

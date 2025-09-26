@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "../styles/globals.css";
+@source "../**/*.{html,ts,tsx,jsx,js}";
+@source "./**/*.{html,ts,tsx,jsx,js}";
+
+/* Design tokens, layers, and base styles */
