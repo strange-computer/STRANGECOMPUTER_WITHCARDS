@@ -209,7 +209,7 @@ export function AboutSection() {
                 className="inline-block bg-white rounded-lg p-6 shadow-lg"
                 whileHover={{ 
                   scale: 1.05,
-                  shadow: "0 20px 40px rgba(0,0,0,0.1)"
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)"
                 }}
                 transition={{ duration: 0.3 }}
                 initial={{ rotateY: -10 }}
@@ -229,11 +229,11 @@ export function AboutSection() {
                   }}
                   animate={{ 
                     scale: [1, 1.1, 1],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut"
+                    transition: {
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }
                   }}
                 >
                   98%
